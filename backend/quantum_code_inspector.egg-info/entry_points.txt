@@ -1,0 +1,3 @@
+[console_scripts]
+qci = cli.main:main
+quantum-inspector = cli.main:main

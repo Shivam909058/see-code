@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: quantum-code-inspector
+Version: 1.0.0
+Summary: AI-powered Code Quality Intelligence Agent
+Author-email: Developer <dev@example.com>
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Requires-Dist: fastapi>=0.104.0
+Requires-Dist: uvicorn>=0.24.0
+Requires-Dist: langchain>=0.1.0
+Requires-Dist: langchain-openai>=0.1.0
+Requires-Dist: langchain-community>=0.0.1
+Requires-Dist: openai>=1.0.0
+Requires-Dist: chromadb>=0.4.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: loguru>=0.7.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: python-multipart>=0.0.6
+Requires-Dist: aiofiles>=23.0.0
+Requires-Dist: httpx>=0.25.0
+Requires-Dist: supabase>=2.0.0
+Requires-Dist: python-jose[cryptography]>=3.3.0
+Requires-Dist: passlib[bcrypt]>=1.7.4
+Requires-Dist: bandit>=1.7.0
+Requires-Dist: safety>=2.3.0
+Requires-Dist: networkx>=3.0.0
+Requires-Dist: gitpython>=3.1.0
+Requires-Dist: tree-sitter>=0.20.0

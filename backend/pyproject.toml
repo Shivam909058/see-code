@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-code-inspector"
+version = "1.0.0"
+description = "AI-powered Code Quality Intelligence Agent"
+authors = [{name = "Developer", email = "dev@example.com"}]
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "langchain>=0.1.0",
+    "langchain-openai>=0.1.0",
+    "langchain-community>=0.0.1",
+    "openai>=1.0.0",
+    "chromadb>=0.4.0",
+    "click>=8.0.0",
+    "rich>=13.0.0",
+    "loguru>=0.7.0",
+    "pydantic>=2.0.0",
+    "python-multipart>=0.0.6",
+    "aiofiles>=23.0.0",
+    "httpx>=0.25.0",
+    "supabase>=2.0.0",
+    "python-jose[cryptography]>=3.3.0",
+    "passlib[bcrypt]>=1.7.4",
+    "bandit>=1.7.0",
+    "safety>=2.3.0",
+    "networkx>=3.0.0",
+    "gitpython>=3.1.0",
+    "tree-sitter>=0.20.0"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.scripts]
+quantum-inspector = "cli.main:main"
+qci = "cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["app*", "cli*"]
+exclude = ["data*", "chroma_db*", "tests*", "__pycache__*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
