@@ -135,7 +135,7 @@ Quantum Code Inspector is an advanced AI-powered code quality analysis platform 
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/quantum-code-inspector.git
+git clone https://github.com/Shivam909058/see-code
 cd quantum-code-inspector
 
 # Set up environment
@@ -178,7 +178,7 @@ quantum-inspector ask /path/to/code -q "What are the main security issues?"
 
 ```bash
 # Clone repository
-git clone https://github.com/your-repo/quantum-code-inspector.git
+git clone https://github.com/Shivam909058/see-code
 cd quantum-code-inspector
 
 # Configure environment
@@ -283,7 +283,7 @@ quantum-inspector analyze ./src --severity high --category security
 
 ```bash
 # GitHub repository analysis
-quantum-inspector analyze-repo https://github.com/user/repo --branch main
+quantum-inspector analyze-repo https://github.com/Shivam909058/see-code
 
 # Interactive Q&A session
 quantum-inspector ask ./src --question "What are the performance bottlenecks?"
